@@ -1,0 +1,24 @@
+planetmodel_index:
+    path:     /
+    defaults: { _controller: "WCSCoavBundle:PlanetModel:index" }
+    methods:  GET
+
+planetmodel_show:
+    path:     /{id}/show
+    defaults: { _controller: "WCSCoavBundle:PlanetModel:show" }
+    methods:  GET
+
+planetmodel_new:
+    path:     /new
+    defaults: { _controller: "WCSCoavBundle:PlanetModel:new" }
+    methods:  [GET, POST]
+
+planetmodel_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WCSCoavBundle:PlanetModel:edit" }
+    methods:  [GET, POST]
+
+planetmodel_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WCSCoavBundle:PlanetModel:delete" }
+    methods:  DELETE
