@@ -1,3 +1,5 @@
+# src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml
+
 WCS\CoavBundle\Entity\Reservation:
     type: entity
     table: null
@@ -16,3 +18,13 @@ WCS\CoavBundle\Entity\Reservation:
             type: integer
             nullable: true
     lifecycleCallbacks: {  }
+
+    manyToMany:
+        passengers:
+            targetEntity: User
+            mappedBy: reservation
+
+    manyToOne:
+        flight:
+            targetEntity: WCS\CoavBundle\Entity\Flight
+            inversedBy: flight

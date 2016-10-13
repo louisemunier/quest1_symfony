@@ -8,6 +8,7 @@ WCS\CoavBundle\Entity\PlanetModel:
             id: true
             generator:
                 strategy: AUTO
+
     fields:
         model:
             type: string
@@ -26,3 +27,8 @@ WCS\CoavBundle\Entity\PlanetModel:
             type: string
             length: 255
     lifecycleCallbacks: {  }
+
+    oneToMany:
+        models:
+            targetEntity: WCS\CoavBundle\Entity\Flight
+            mappedBy: model
