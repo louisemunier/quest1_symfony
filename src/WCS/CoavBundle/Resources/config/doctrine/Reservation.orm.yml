@@ -27,4 +27,4 @@ WCS\CoavBundle\Entity\Reservation:
     manyToOne:
         flight:
             targetEntity: WCS\CoavBundle\Entity\Flight
-            inversedBy: flight
+#            inversedBy: flights

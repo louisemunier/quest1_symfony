@@ -260,4 +260,47 @@ class Flight
     {
         return $this->plane;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $flights;
+
+
+    /**
+     * Get flights
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getFlights()
+    {
+        return $this->flights;
+    }
+    /**
+     * @var \WCS\CoavBundle\Entity\PlanetModel
+     */
+    private $models;
+
+
+    /**
+     * Set models
+     *
+     * @param \WCS\CoavBundle\Entity\PlanetModel $models
+     * @return Flight
+     */
+    public function setModels(\WCS\CoavBundle\Entity\PlanetModel $models = null)
+    {
+        $this->models = $models;
+
+        return $this;
+    }
+
+    /**
+     * Get models
+     *
+     * @return \WCS\CoavBundle\Entity\PlanetModel 
+     */
+    public function getModels()
+    {
+        return $this->models;
+    }
 }

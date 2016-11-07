@@ -97,4 +97,19 @@ class User
     {
         return $this->reservations;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $reservation;
+
+
+    /**
+     * Get reservation
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getReservation()
+    {
+        return $this->reservation;
+    }
 }

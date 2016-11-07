@@ -232,4 +232,42 @@ class PlanetModel
     {
         return $this->models;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $planes;
+
+
+    /**
+     * Add planes
+     *
+     * @param \WCS\CoavBundle\Entity\Flight $planes
+     * @return PlanetModel
+     */
+    public function addPlane(\WCS\CoavBundle\Entity\Flight $planes)
+    {
+        $this->planes[] = $planes;
+
+        return $this;
+    }
+
+    /**
+     * Remove planes
+     *
+     * @param \WCS\CoavBundle\Entity\Flight $planes
+     */
+    public function removePlane(\WCS\CoavBundle\Entity\Flight $planes)
+    {
+        $this->planes->removeElement($planes);
+    }
+
+    /**
+     * Get planes
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPlanes()
+    {
+        return $this->planes;
+    }
 }

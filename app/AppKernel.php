@@ -17,7 +17,16 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             //new AppBundle\AppBundle(),
             new WCS\CoavBundle\WCSCoavBundle(),
-        );
+
+	    	// dependencies for Sonata
+            new Sonata\CoreBundle\SonataCoreBundle(),
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+		    // Add a storage bundle : SonataDoctrineORMAdmin
+		    new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+		    // add SonataAdminBundle
+		    new Sonata\AdminBundle\SonataAdminBundle(),
+	        );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
