@@ -17,6 +17,7 @@ class ReservationAdmin extends Admin
             ->add('name')
             ->add('nbSeats')
             ->add('flight')
+//            ->add('passengers')
         ;
     }
 
@@ -27,6 +28,7 @@ class ReservationAdmin extends Admin
             ->add('name')
             ->add('nbSeats')
             ->add('flight')
+//            ->add('passengers')
         ;
     }
 
@@ -38,6 +40,7 @@ class ReservationAdmin extends Admin
 //            ->add('name')
             ->add('nbSeats')
             ->add('flight')
+//            ->add('passengers')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),
@@ -52,10 +55,11 @@ class ReservationAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-//            ->add('id')
+            ->add('id')
             ->add('name')
             ->add('nbSeats')
             ->add('flight')
+//            ->add('passengers')
         ;
     }
 }

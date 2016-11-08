@@ -31,6 +31,8 @@ class FlightAdmin extends Admin
             ->add('departure')
             ->add('arrival')
             ->add('plane')
+            ->add('freeSeats')
+            ->add('takeofTime')
         ;
     }
 
@@ -42,6 +44,8 @@ class FlightAdmin extends Admin
             ->add('pilot')
             ->add('departure')
             ->add('arrival')
+            ->add('freeSeats')
+            ->add('takeofTime')
             ->add('plane')
             ->add('_action', 'actions', array(
                 'actions' => array(
@@ -61,8 +65,8 @@ class FlightAdmin extends Admin
             ->add('pilot')
             ->add('freeSeats')
             ->add('takeofTime')
-            ->add('departure')
-            ->add('arrival')
+            ->add('departures')
+            ->add('arrivals')
             ->add('plane')
         ;
     }

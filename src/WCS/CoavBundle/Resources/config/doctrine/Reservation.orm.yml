@@ -27,4 +27,7 @@ WCS\CoavBundle\Entity\Reservation:
     manyToOne:
         flight:
             targetEntity: WCS\CoavBundle\Entity\Flight
-#            inversedBy: flights
+            inversedBy: flights
+            joinColumn:
+                name: flight_id
+                referencedColumnName: id

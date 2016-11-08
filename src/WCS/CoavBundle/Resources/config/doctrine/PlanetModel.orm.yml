@@ -28,7 +28,7 @@ WCS\CoavBundle\Entity\PlanetModel:
             length: 255
     lifecycleCallbacks: {  }
 
-#    oneToMany:
-#        planes:
-#            targetEntity: WCS\CoavBundle\Entity\Flight
-#            mappedBy: plane
+    oneToMany:
+        planes:
+            targetEntity: Flight
+            mappedBy: plane
