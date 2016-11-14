@@ -16,8 +16,8 @@ class PlaneModelAdmin extends Admin
         $formMapper
             ->add('model')
             ->add('manufacturer')
-            ->add('cruiseSpeed')
-            ->add('nbSeats')
+//            ->add('cruiseSpeed')
+//            ->add('nbSeats')
             ->add('status')
         ;
     }
@@ -28,8 +28,8 @@ class PlaneModelAdmin extends Admin
         $datagridMapper
             ->add('model')
             ->add('manufacturer')
-            ->add('cruiseSpeed')
-            ->add('nbSeats')
+//            ->add('cruiseSpeed')
+//            ->add('nbSeats')
             ->add('status')
         ;
     }
@@ -38,11 +38,10 @@ class PlaneModelAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-//            ->addIdentifier('id')
-            ->add('model')
+            ->addIdentifier('model')
             ->add('manufacturer')
-            ->add('cuiseSpeed')
-            ->add('nbSeats')
+//            ->add('cuiseSpeed')
+//            ->add('nbSeats')
             ->add('status')
             ->add('_action', 'actions', array(
                 'actions' => array(
@@ -61,8 +60,8 @@ class PlaneModelAdmin extends Admin
 //            ->add('id')
             ->add('model')
             ->add('manufacturer')
-            ->add('cruiseSpeed')
-            ->add('nbSeats')
+//            ->add('cruiseSpeed')
+//            ->add('nbSeats')
             ->add('status')
         ;
     }

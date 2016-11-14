@@ -17,6 +17,8 @@ class ReservationType extends AbstractType
         $builder
             ->add('name')
             ->add('nbSeats')
+            ->add('flight', EntityType::class, array('class'=>'WCS:CoavBundle:Entity:Flight', 'choice_label'=>'pilot'))
+
         ;
     }
     

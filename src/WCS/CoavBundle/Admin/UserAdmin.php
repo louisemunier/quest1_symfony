@@ -15,7 +15,6 @@ class UserAdmin extends Admin
     {
         $formMapper
             ->add('name')
-//            ->add('reservation')
         ;
     }
 
@@ -24,7 +23,6 @@ class UserAdmin extends Admin
     {
         $datagridMapper
             ->add('name')
-//            ->add('reservation')
         ;
     }
 
@@ -32,9 +30,7 @@ class UserAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('id')
             ->add('name')
-//            ->add('reservation')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),
@@ -49,9 +45,8 @@ class UserAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('id')
+//            ->add('id')
             ->add('name')
-//            ->add('reservation')
         ;
     }
 }

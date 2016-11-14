@@ -34,7 +34,7 @@ services:
     app.admin.user:
         class: WCS\CoavBundle\Admin\UserAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Reservation", label: "User" }
+            - { name: sonata.admin, manager_type: orm, group: "Espace Reservation", label: "User" }
         arguments:
             - ~
             - WCS\CoavBundle\Entity\User

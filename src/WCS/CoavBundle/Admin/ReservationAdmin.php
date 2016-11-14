@@ -16,8 +16,6 @@ class ReservationAdmin extends Admin
         $formMapper
             ->add('name')
             ->add('nbSeats')
-            ->add('flight')
-//            ->add('passengers')
         ;
     }
 
@@ -27,8 +25,6 @@ class ReservationAdmin extends Admin
         $datagridMapper
             ->add('name')
             ->add('nbSeats')
-            ->add('flight')
-//            ->add('passengers')
         ;
     }
 
@@ -37,10 +33,7 @@ class ReservationAdmin extends Admin
     {
         $listMapper
             ->addIdentifier('name')
-//            ->add('name')
             ->add('nbSeats')
-            ->add('flight')
-//            ->add('passengers')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),
@@ -58,8 +51,6 @@ class ReservationAdmin extends Admin
             ->add('id')
             ->add('name')
             ->add('nbSeats')
-            ->add('flight')
-//            ->add('passengers')
         ;
     }
 }

@@ -9,12 +9,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Terrain
 {
-
     public function __toString()
     {
-	return $this ->name;
+	    return $this ->name;
     }
-
 
     // YAML GENERATED CODE
 
@@ -201,6 +199,8 @@ class Terrain
     {
         return $this->country;
     }
+
+
     /**
      * @var \Doctrine\Common\Collections\Collection
      */
@@ -248,6 +248,19 @@ class Terrain
     }
 
     /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $arrivals;
+
+//    /**
+//     * Constructor
+//     */
+//    public function __construct()
+//    {
+//        $this->arrivals = new \Doctrine\Common\Collections\ArrayCollection();
+//    }
+
+    /**
      * Add arrivals
      *
      * @param \WCS\CoavBundle\Entity\Flight $arrivals
@@ -279,10 +292,6 @@ class Terrain
     {
         return $this->arrivals;
     }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $arrivals;
 
 
 }

@@ -24,16 +24,46 @@ class Reservation
      */
     private $nbSeats;
 
+    /**
+     * @var int
+     */
+    private $flight;
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
     }
+
+
+    /**
+     * Get flight
+     *
+     * @return integer
+     */
+    public function getFlight()
+    {
+        return $this->flight;
+    }
+    
+    /**
+     * Set flight
+     *
+     * @param string $flight
+     * @return Reservation
+     */
+    public function setFlight($flight)
+    {
+        $this->flight = $flight;
+
+        return $this;
+    }
+
 
     /**
      * Set name
@@ -125,32 +155,62 @@ class Reservation
     {
         return $this->passengers;
     }
+
+//    /**
+//     * @var \WCS\CoavBundle\Entity\Flight
+//     */
+//    private $flight;
+
+
+//    /**
+//     * Set flight
+//     *
+//     * @param \WCS\CoavBundle\Entity\Flight $flight
+//     * @return Reservation
+//     */
+//    public function setFlight(\WCS\CoavBundle\Entity\Flight $flight = null)
+//    {
+//        $this->flight = $flight;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get flight
+//     *
+//     * @return \WCS\CoavBundle\Entity\Flight
+//     */
+//    public function getFlight()
+//    {
+//        return $this->flight;
+//    }
+
     /**
      * @var \WCS\CoavBundle\Entity\Flight
      */
-    private $flight;
+    private $reservation;
 
 
     /**
-     * Set flight
+     * Set reservation
      *
-     * @param \WCS\CoavBundle\Entity\Flight $flight
+     * @param \WCS\CoavBundle\Entity\Flight $reservation
      * @return Reservation
      */
-    public function setFlight(\WCS\CoavBundle\Entity\Flight $flight = null)
+    public function setReservation(\WCS\CoavBundle\Entity\Flight $reservation = null)
     {
-        $this->flight = $flight;
+        $this->reservation = $reservation;
 
         return $this;
     }
 
     /**
-     * Get flight
+     * Get reservation
      *
      * @return \WCS\CoavBundle\Entity\Flight 
      */
-    public function getFlight()
+    public function getReservation()
     {
-        return $this->flight;
+        return $this->reservation;
     }
 }

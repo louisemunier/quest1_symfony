@@ -15,6 +15,6 @@ WCS\CoavBundle\Entity\User:
     lifecycleCallbacks: { }
 
     manyToMany:
-        reservation:
+        reservations:
             targetEntity: WCS\CoavBundle\Entity\Reservation
             inversedBy: passengers

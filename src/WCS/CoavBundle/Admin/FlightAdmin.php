@@ -14,9 +14,10 @@ class FlightAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
+//            ->add('id')
             ->add('pilot')
             ->add('freeSeats')
-            ->add('takeofTime')
+            ->add('takeofTime', 'datetime')
             ->add('departure')
             ->add('arrival')
             ->add('plane')
@@ -27,12 +28,13 @@ class FlightAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
+            ->add('id')
             ->add('pilot')
             ->add('departure')
             ->add('arrival')
-            ->add('plane')
-            ->add('freeSeats')
-            ->add('takeofTime')
+//            ->add('plane')
+//            ->add('freeSeats')
+//            ->add('takeofTime')
         ;
     }
 
@@ -40,13 +42,12 @@ class FlightAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-//            ->addIdentifier('id')
+            ->addIdentifier('departure')
             ->add('pilot')
-            ->add('departure')
             ->add('arrival')
-            ->add('freeSeats')
-            ->add('takeofTime')
-            ->add('plane')
+//            ->add('freeSeats')
+//            ->add('takeofTime')
+//            ->add('plane')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),
@@ -61,13 +62,13 @@ class FlightAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-//            ->add('id')
+            ->add('id')
             ->add('pilot')
-            ->add('freeSeats')
-            ->add('takeofTime')
-            ->add('departures')
-            ->add('arrivals')
-            ->add('plane')
+//            ->add('freeSeats')
+//            ->add('takeofTime')
+            ->add('departure')
+            ->add('arrival')
+//            ->add('plane')
         ;
     }
 }

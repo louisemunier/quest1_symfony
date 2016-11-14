@@ -9,6 +9,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class PlanetModel
 {
+    Public function __toString()
+    {
+        return $this->model;
+    }
+
+    // YAML GENERATED CODE
     /**
      * @var int
      */
@@ -164,110 +170,46 @@ class PlanetModel
     {
         return $this->status;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->id = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add id
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $id
-     * @return PlanetModel
-     */
-    public function addId(\WCS\CoavBundle\Entity\Flight $id)
-    {
-        $this->id[] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Remove id
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $id
-     */
-    public function removeId(\WCS\CoavBundle\Entity\Flight $id)
-    {
-        $this->id->removeElement($id);
-    }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $models;
 
 
-    /**
-     * Add models
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $models
-     * @return PlanetModel
-     */
-    public function addModel(\WCS\CoavBundle\Entity\Flight $models)
-    {
-        $this->models[] = $models;
-
-        return $this;
-    }
-
-    /**
-     * Remove models
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $models
-     */
-    public function removeModel(\WCS\CoavBundle\Entity\Flight $models)
-    {
-        $this->models->removeElement($models);
-    }
-
-    /**
-     * Get models
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getModels()
-    {
-        return $this->models;
-    }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $planes;
-
-
-    /**
-     * Add planes
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $planes
-     * @return PlanetModel
-     */
-    public function addPlane(\WCS\CoavBundle\Entity\Flight $planes)
-    {
-        $this->planes[] = $planes;
-
-        return $this;
-    }
-
-    /**
-     * Remove planes
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $planes
-     */
-    public function removePlane(\WCS\CoavBundle\Entity\Flight $planes)
-    {
-        $this->planes->removeElement($planes);
-    }
-
-    /**
-     * Get planes
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getPlanes()
-    {
-        return $this->planes;
-    }
+//
+//
+//    /**
+//     * @var \Doctrine\Common\Collections\Collection
+//     */
+//    private $planes;
+//
+//
+//    /**
+//     * Add planes
+//     *
+//     * @param \WCS\CoavBundle\Entity\Flight $planes
+//     * @return PlanetModel
+//     */
+//    public function addPlane(\WCS\CoavBundle\Entity\Flight $planes)
+//    {
+//        $this->planes[] = $planes;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Remove planes
+//     *
+//     * @param \WCS\CoavBundle\Entity\Flight $planes
+//     */
+//    public function removePlane(\WCS\CoavBundle\Entity\Flight $planes)
+//    {
+//        $this->planes->removeElement($planes);
+//    }
+//
+//    /**
+//     * Get planes
+//     *
+//     * @return \Doctrine\Common\Collections\Collection
+//     */
+//    public function getPlanes()
+//    {
+//        return $this->planes;
+//    }
 }

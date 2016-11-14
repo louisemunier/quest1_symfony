@@ -24,23 +24,13 @@ WCS\CoavBundle\Entity\Flight:
         departure:
             targetEntity: WCS\CoavBundle\Entity\Terrain
             inversedBy: departures
-            joinColumn:
-                name: departure_id
-                referencedColumnName: id
         arrival:
             targetEntity: WCS\CoavBundle\Entity\Terrain
             inversedBy: arrivals
-            joinColumn:
-                name: arrival_id
-                referencedColumnName: id
         plane:
             targetEntity: WCS\CoavBundle\Entity\PlanetModel
-            inversedBy: planes
-            joinColumn:
-                name: plane_id
-                referencedColumnName: id
 
     oneToMany:
-        flights:
-            targetEntity: Reservation
+        reservations:
+            targetEntity: WCS\CoavBundle\Entity\Reservation
             mappedBy: flight

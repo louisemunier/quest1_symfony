@@ -20,8 +20,8 @@ class TerrainAdmin extends Admin
             ->add('longitude')
             ->add('city')
             ->add('country')
-//            ->add('departures')
-//            ->add('arrivals')
+            ->add('departures')
+            ->add('arrivals')
         ;
     }
 
@@ -33,8 +33,6 @@ class TerrainAdmin extends Admin
             ->add('icao')
             ->add('city')
             ->add('country')
-//            ->add('departures')
-//            ->add('arrivals')
         ;
     }
 
@@ -43,12 +41,9 @@ class TerrainAdmin extends Admin
     {
         $listMapper
             ->addIdentifier('name')
-//            ->add('name')
             ->add('icao')
             ->add('city')
             ->add('country')
-//            ->add('departures')
-//            ->add('arrivals')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),

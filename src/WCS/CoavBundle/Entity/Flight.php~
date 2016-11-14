@@ -9,6 +9,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Flight
 {
+//    Public function __toString()
+//    {
+//        return $this->departure;
+//    }
+
+    // YAML GENERATED CODE
+
     /**
      * @var int
      */
@@ -38,6 +45,11 @@ class Flight
      * @var \DateTime
      */
     private $takeofTime;
+
+//    /**
+//     * @var string
+//     */
+//    private $plane;
 
 
     /**
@@ -164,40 +176,11 @@ class Flight
     {
         return $this->takeofTime;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->id = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
-    /**
-     * Add id
-     *
-     * @param \WCS\CoavBundle\Entity\Reservation $id
-     * @return Flight
-     */
-    public function addId(\WCS\CoavBundle\Entity\Reservation $id)
-    {
-        $this->id[] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Remove id
-     *
-     * @param \WCS\CoavBundle\Entity\Reservation $id
-     */
-    public function removeId(\WCS\CoavBundle\Entity\Reservation $id)
-    {
-        $this->id->removeElement($id);
-    }
     /**
      * @var \Doctrine\Common\Collections\Collection
      */
-    private $flight;
+    private $flights;
 
     /**
      * @var \WCS\CoavBundle\Entity\PlanetModel
@@ -206,37 +189,44 @@ class Flight
 
 
     /**
-     * Add flight
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->flights = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Add flights
      *
-     * @param \WCS\CoavBundle\Entity\Reservation $flight
+     * @param \WCS\CoavBundle\Entity\Reservation $flights
      * @return Flight
      */
-    public function addFlight(\WCS\CoavBundle\Entity\Reservation $flight)
+    public function addFlight(\WCS\CoavBundle\Entity\Reservation $flights)
     {
-        $this->flight[] = $flight;
-
+        $this->flights[] = $flights;
         return $this;
     }
-
     /**
-     * Remove flight
+     * Remove flights
      *
-     * @param \WCS\CoavBundle\Entity\Reservation $flight
+     * @param \WCS\CoavBundle\Entity\Reservation $flights
      */
-    public function removeFlight(\WCS\CoavBundle\Entity\Reservation $flight)
+    public function removeFlight(\WCS\CoavBundle\Entity\Reservation $flights)
     {
-        $this->flight->removeElement($flight);
+        $this->flights->removeElement($flights);
+    }
+    /**
+     * Get flights
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getFlights()
+    {
+        return $this->flights;
     }
 
-    /**
-     * Get flight
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getFlight()
-    {
-        return $this->flight;
-    }
 
     /**
      * Set plane
@@ -254,53 +244,97 @@ class Flight
     /**
      * Get plane
      *
-     * @return \WCS\CoavBundle\Entity\PlanetModel 
+     * @return \WCS\CoavBundle\Entity\PlanetModel
      */
     public function getPlane()
     {
         return $this->plane;
     }
+
     /**
      * @var \Doctrine\Common\Collections\Collection
      */
-    private $flights;
+    private $reservations;
 
 
     /**
-     * Get flights
+     * Add reservations
      *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getFlights()
-    {
-        return $this->flights;
-    }
-    /**
-     * @var \WCS\CoavBundle\Entity\PlanetModel
-     */
-    private $models;
-
-
-    /**
-     * Set models
-     *
-     * @param \WCS\CoavBundle\Entity\PlanetModel $models
+     * @param \WCS\CoavBundle\Entity\Reservation $reservations
      * @return Flight
      */
-    public function setModels(\WCS\CoavBundle\Entity\PlanetModel $models = null)
+    public function addReservation(\WCS\CoavBundle\Entity\Reservation $reservations)
     {
-        $this->models = $models;
+        $this->reservations[] = $reservations;
 
         return $this;
     }
 
     /**
-     * Get models
+     * Remove reservations
      *
-     * @return \WCS\CoavBundle\Entity\PlanetModel 
+     * @param \WCS\CoavBundle\Entity\Reservation $reservations
      */
-    public function getModels()
+    public function removeReservation(\WCS\CoavBundle\Entity\Reservation $reservations)
     {
-        return $this->models;
+        $this->reservations->removeElement($reservations);
+    }
+
+    /**
+     * Get reservations
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getReservations()
+    {
+        return $this->reservations;
     }
 }
+
+
+
+
+
+
+
+
+//
+//    /**
+//     * @var \Doctrine\Common\Collections\Collection
+//     */
+//    private $flight;
+
+
+//    /**
+//     * Add flight
+//     *
+//     * @param \WCS\CoavBundle\Entity\Reservation $flight
+//     * @return Flight
+//     */
+//    public function addFlight(\WCS\CoavBundle\Entity\Reservation $flight)
+//    {
+//        $this->flight[] = $flight;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Remove flight
+//     *
+//     * @param \WCS\CoavBundle\Entity\Reservation $flight
+//     */
+//    public function removeFlight(\WCS\CoavBundle\Entity\Reservation $flight)
+//    {
+//        $this->flight->removeElement($flight);
+//    }
+//
+//    /**
+//     * Get flight
+//     *
+//     * @return \Doctrine\Common\Collections\Collection
+//     */
+//    public function getFlight()
+//    {
+//        return $this->flight;
+//    }
+ 
