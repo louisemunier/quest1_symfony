@@ -252,13 +252,6 @@ class Terrain
      */
     private $arrivals;
 
-//    /**
-//     * Constructor
-//     */
-//    public function __construct()
-//    {
-//        $this->arrivals = new \Doctrine\Common\Collections\ArrayCollection();
-//    }
 
     /**
      * Add arrivals

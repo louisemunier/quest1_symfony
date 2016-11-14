@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaf2a22f-667d-4e3b-9a06-f671a4da9277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/FlightAdmin.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/FlightAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/PlaneModelAdmin.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/PlaneModelAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/ReservationAdmin.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/ReservationAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/TerrainAdmin.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/TerrainAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/UserAdmin.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/UserAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Reservation.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Reservation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Form/FlightType.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Form/FlightType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Form/ReservationType.php" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Form/ReservationType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Flight.orm.yml" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Flight.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/PlanetModel.orm.yml" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/PlanetModel.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Terrain.orm.yml" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Terrain.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/User.orm.yml" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/User.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/services.yml" />
     </list>
     <ignored path="quest_symfony1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,101 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlanetModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-312">
-              <caret line="174" column="2" selection-start-line="174" selection-start-column="2" selection-end-line="174" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flight.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="164" column="33" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightAdmin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Admin/FlightAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Form/FlightType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="129" selection-start-line="20" selection-start-column="129" selection-end-line="20" selection-end-column="129" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flight.orm.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Flight.orm.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Terrain.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="254" column="0" selection-start-line="254" selection-start-column="2" selection-end-line="260" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Reservation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2010">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reservation.orm.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.orm.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/User.orm.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="-582">
+              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,13 +56,13 @@
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/UserAdmin.php" />
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml" />
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/User.orm.yml" />
-        <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php" />
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Reservation.php" />
-        <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php" />
-        <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php" />
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Form/FlightType.php" />
         <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Admin/FlightAdmin.php" />
+        <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php" />
+        <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php" />
+        <option value="$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php" />
       </list>
     </option>
   </component>
@@ -539,12 +434,12 @@
       <workItem from="1478678851475" duration="14742000" />
       <workItem from="1479067373782" duration="5112000" />
       <workItem from="1479120079401" duration="10000" />
-      <workItem from="1479125135636" duration="7184000" />
+      <workItem from="1479125135636" duration="7883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77813000" />
+    <option name="totallyTimeSpent" value="78512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="27" width="1907" height="673" extended-state="0" />
@@ -866,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="174" column="2" selection-start-line="174" selection-start-column="2" selection-end-line="174" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Admin/ReservationAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -886,22 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2010">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -922,14 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/User.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -938,18 +801,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php">
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/PlanetModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="254" column="0" selection-start-line="254" selection-start-column="2" selection-end-line="260" selection-end-column="7" />
+        <state relative-caret-position="2238">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Flight.orm.yml">
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="610">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Admin/FlightAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -962,18 +833,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Flight.php">
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Flight.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="164" column="33" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="33" />
+        <state relative-caret-position="303">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Admin/FlightAdmin.php">
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Terrain.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="3795">
+          <caret line="253" column="4" selection-start-line="253" selection-start-column="4" selection-end-line="253" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1152">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Resources/config/doctrine/Reservation.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WCS/CoavBundle/Entity/Reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding />
         </state>
       </provider>
